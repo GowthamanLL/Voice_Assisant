@@ -48,12 +48,12 @@ def Mic():
 import openai
 from dotenv import load_dotenv
 
-openai.api_key="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"
+openai.api_key="your api key"
 load_dotenv()
 completion=openai.Completion()
 
 def replybrain(question,chat_log=None):
-    filelog=open("C:/Users/manoj/Downloads/chat_log.txt","r")
+    filelog=open("file location->chat_log.txt","r")
     chat_log_template=filelog.read()
     filelog.close()
 
